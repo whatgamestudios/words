@@ -28,6 +28,7 @@ from pathlib import Path
 def main() -> int:
     root = Path(__file__).resolve().parent
     in_path = root / "common_words.txt"
+    game_path = root / "game_words.txt"
     out_path = root / "seed_words.cs"
 
     print(f"Started processing {in_path.name} into {out_path.name}.")
@@ -35,6 +36,16 @@ def main() -> int:
     if not in_path.is_file():
         print(f"Missing {in_path}", file=sys.stderr)
         return 1
+    if not game_path.is_file():
+        print(f"Missing {game_path}", file=sys.stderr)
+        return 1
+
+    game_words: set[str] = set()
+    with game_path.open(encoding="utf-8", errors="replace") as f:
+        for line in f:
+            w = line.strip().lower()
+            if w:
+                game_words.add(w)
 
     words: list[str] = []
     with in_path.open(encoding="utf-8", errors="replace") as f:
@@ -47,6 +58,8 @@ def main() -> int:
             if len(w) <= 1 or len(w) > 11:
                 continue
             if len(set(w)) != len(w):
+                continue
+            if w not in game_words:
                 continue
             words.append(w)
 
