@@ -156819,6 +156819,7 @@ iowa
 iowan
 iowans
 iowt
+ip
 ipalnemohuani
 ipecac
 ipecacs
@@ -160835,6 +160836,7 @@ joystick
 joysticks
 joyweed
 jozy
+jp
 jr
 js
 jt
@@ -178291,7 +178293,6 @@ mansioned
 mansioneer
 mansionry
 mansions
-manslain
 manslaughter
 manslaughterer
 manslaughtering
@@ -178302,6 +178303,7 @@ manslayers
 manslaying
 manso
 mansonry
+mansplain
 mansplaining
 manstealer
 manstealing
@@ -331999,6 +332001,7 @@ twyhynde
 twyver
 tx
 txt
+ty
 tyauve
 tybalt
 tyburn
@@ -355147,6 +355150,7 @@ utu
 utum
 uturuncu
 uucpnet
+uv
 uva
 uval
 uvala
@@ -355929,12 +355933,17 @@ vantbrass
 vanterie
 vantguard
 vanward
+vape
+vaped
+vaper
+vapes
 vapid
 vapidism
 vapidities
 vapidity
 vapidly
 vapidness
+vaping
 vapocauterization
 vapographic
 vapography
